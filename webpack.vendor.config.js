@@ -12,9 +12,9 @@ module.exports = {
         library: 'vendor_lib'
     },
     plugins: [
-        // new webpack.DllPlugin({
-        //     name: 'vendor_lib',
-        //     path: path.join(__dirname, 'build', 'vendor-manifest.json')
-        // })
+        new webpack.DllPlugin({
+            name: 'vendor_lib',
+            path: path.join(__dirname, 'build', 'vendor-manifest.json')
+        })
     ]
 }
